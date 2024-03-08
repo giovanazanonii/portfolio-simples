@@ -122,3 +122,11 @@ main {
     left: 50%;
     transform: translate(-30%, -30%);
 }
+.section-hover {
+    transition: box-shadow 0.3s ease;
+}
+
+.section-hover:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}

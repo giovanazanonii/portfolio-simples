@@ -27,23 +27,37 @@
         </div>
     </nav>
     <main>
-        <section class="info">
+        <section class="info section-hover">
             <h2>Informações Pessoais</h2>
             <p>Olá! Meu nome é Giovana Zanoni, tenho 17 anos, moro em Criciúma. Estou cursando Técnico em Informática integrado ao Ensino Médio e futuramente pretendo trabalhar na área que estou estudando.<p>
         </section>
     </main>
     <main>
-        <section class="gostos">
+        <section class="gostos section-hover">
             <h2>Hobbies e Gostos</h2>
             <p>Além de estudar, no meu tempo livre costumo jogar jogos online, escutar músicas ou assistir filmes.<p>
         </section>
         <main>
-            <section class="estudos">
+            <section class="estudos section-hover">
                 <h2>Área de Estudo</h2>
             Ensino fundamental I e II - Escola José Cesário da Silva (2021)<br>
             Cursando Ensino Médio - Cedup Abílio Paulo (Previsão de conclusão - 2024)
             </section>
         </main>
     </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var sections = document.querySelectorAll('.section-hover');
+            sections.forEach(function (section) {
+                section.addEventListener('mouseover', function () {
+                    this.classList.add('section-hover');
+                });
+                section.addEventListener('mouseout', function () {
+                    this.classList.remove('section-hover');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
